@@ -5,3 +5,7 @@ const array = [
     [20, 33, 11, 12, 19],
     [3, 3, 4, 5, 10]
 ]
+
+for(let index in array) {
+    console.log(`Jogador ${Number(index) + 1}: ${array[index].reduce((a, b) => a + ", " + b)}`)
+}
